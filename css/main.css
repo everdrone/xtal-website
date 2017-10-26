@@ -155,7 +155,11 @@ section {
   margin-bottom: 50px; }
 
 .header h1, .hero h1 {
-  margin: 0px; }
+  margin: 0px;
+  font-size: 48px; }
+  @media (min-width: 992px) {
+    .header h1, .hero h1 {
+      font-size: 54px; } }
 .header p, .hero p {
   margin-top: 20px;
   margin-bottom: 0px;

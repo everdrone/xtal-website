@@ -95,6 +95,10 @@ section {
 .header {
 	h1 {
 		margin: 0px;
+		font-size: 48px;
+		@include respond-to('medium') {
+			font-size: 54px;
+		}
 	}
 	p {
 		margin-top: 20px;
