@@ -1,4 +1,5 @@
 @import 'gridlover';
+@import 'breakpoints';
 @import 'colors';
 html,
 body {
@@ -112,7 +113,10 @@ section {
 
 .list-features {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	@include respond-to('medium') {
+		flex-direction: row;
+	}
 	list-style: none;
 	padding: 0;
 	.feature-block {
@@ -122,11 +126,13 @@ section {
 		flex-basis: 100%;
 		flex: 1;
 		padding: 20px;
-		&:nth-of-type(1) {
-			padding-left: 0px;
-		}
-		&:nth-last-of-type(1) {
-			padding-right: 0px;
+		@include respond-to('medium') {
+			&:nth-of-type(1) {
+				padding-left: 0px;
+			}
+			&:nth-last-of-type(1) {
+				padding-right: 0px;
+			}
 		}
 		figure {
 			width: 64px;
@@ -179,7 +185,10 @@ section {
 
 .split-feature {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	@include respond-to('medium') {
+		flex-direction: row;
+	}
 	align-items: center;
 	figure {
 		width: 72px;
@@ -197,11 +206,19 @@ section {
 			margin-bottom: 0px;
 			margin-top: 20px;
 		}
+		padding: 20px;
+		@include respond-to('medium') {
+			padding: 0px;
+		}
 		flex: 0 0 50%;
 	}
 	.feature-figure {
 		flex: 0 0 50%;
-		padding-left: 80px;
+		padding-top: 30px;
+		@include respond-to('medium') {
+			padding-top: 0px;
+			padding-left: 80px;
+		}
 	}
 }
 
@@ -275,7 +292,10 @@ section {
 .big-section {
 	overflow: hidden;
 	position: relative;
-	padding: 180px 0;
+	padding: 90px 0;
+	@include respond-to('medium') {
+		padding: 180px 0;
+	}
 }
 
 .c-bg-white {
@@ -314,7 +334,10 @@ section {
 	height: 120vh;
 	width: 100%;
 	position: absolute;
-	top: -30vh;
+	top: -10vh;
+	@include respond-to('medium') {
+		top: -30vh;
+	}
 }
 
 svg {
@@ -346,8 +369,12 @@ svg {
 }
 
 #hero_animation {
-	margin-top: -80px;
-	margin-bottom: -80px;
+	margin-top: -40px;
+	margin-bottom: -40px;
+	@include respond-to('medium') {
+		margin-top: -80px;
+		margin-bottom: -80px;
+	}
 }
 
 .above {
