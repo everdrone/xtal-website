@@ -70,6 +70,10 @@ code {
 	font-family: $code;
 }
 
+.alt {
+	margin-top: 16px;
+}
+
 section {
 	display: block;
 	width: 100%;
@@ -218,6 +222,7 @@ section {
 	}
 	.feature-figure {
 		flex: 0 0 50%;
+		padding: 20px;
 		padding-top: 30px;
 		@include respond-to('medium') {
 			padding-top: 0px;

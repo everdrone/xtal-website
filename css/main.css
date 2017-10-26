@@ -135,6 +135,9 @@ pre,
 code {
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace; }
 
+.alt {
+  margin-top: 16px; }
+
 section {
   display: block;
   width: 100%;
@@ -255,6 +258,7 @@ section {
         padding: 0px; } }
   .split-feature .feature-figure {
     flex: 0 0 50%;
+    padding: 20px;
     padding-top: 30px; }
     @media (min-width: 992px) {
       .split-feature .feature-figure {

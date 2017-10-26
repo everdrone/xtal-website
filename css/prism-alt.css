@@ -1,0 +1,204 @@
+@charset "UTF-8";
+/* http://prismjs.com/download.html?themes=prism-solarizedlight&languages=markup+css+clike+javascript+css-extras+diff+git+graphql+json+markdown+jsx+sass+scss+typescript&plugins=line-highlight+line-numbers */
+/*
+ Solarized Color Schemes originally by Ethan Schoonover
+ http://ethanschoonover.com/solarized
+
+ Ported for PrismJS by Hector Matos
+ Website: https://krakendev.io
+ Twitter Handle: https://twitter.com/allonsykraken)
+*/
+/*
+SOLARIZED HEX
+--------- -------
+base03    #002b36
+base02    #adc3ff
+base01    #05a
+base00    #414770
+base0     #839496
+base1     #91a2b0
+base2     #eee8d5
+base3     #f6f9fc
+yellow    #44bbff
+orange    #fa7459
+red       #dc322f
+magenta   #d33682
+violet    #6c71c4
+blue      #87bbfd
+cyan      #73d4b7
+green     #859900
+*/
+.alt {
+  /* Code blocks */
+  /* Inline code */ }
+  .alt code[class*='language-'],
+  .alt pre[class*='language-'] {
+    color: #c1c6f0;
+    /* base00 */
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none; }
+  .alt pre[class*='language-']::-moz-selection,
+  .alt pre[class*='language-'] ::-moz-selection,
+  .alt code[class*='language-']::-moz-selection,
+  .alt code[class*='language-'] ::-moz-selection {
+    background: rgba(255, 255, 255, 0.1);
+    /* base02 */ }
+  .alt pre[class*='language-']::selection,
+  .alt pre[class*='language-'] ::selection,
+  .alt code[class*='language-']::selection,
+  .alt code[class*='language-'] ::selection {
+    background: rgba(255, 255, 255, 0.1);
+    /* base02 */ }
+  .alt pre[class*='language-'] {
+    padding: 16px;
+    margin: 0;
+    overflow: auto;
+    border-radius: 0.3em; }
+  .alt :not(pre) > code[class*='language-'],
+  .alt pre[class*='language-'] {
+    /* background-color: #f6f9fc; base3 */
+    background-color: #32325d;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07); }
+  .alt :not(pre) > code[class*='language-'] {
+    padding: 0.1em;
+    border-radius: 0.3em; }
+  .alt .token.comment,
+  .alt .token.prolog,
+  .alt .token.doctype,
+  .alt .token.cdata {
+    color: #3b3c74;
+    /* base1 */ }
+  .alt .token.punctuation {
+    color: #8898ad;
+    /* base01 */ }
+  .alt .namespace {
+    opacity: 0.7; }
+  .alt .token.property,
+  .alt .token.tag,
+  .alt .token.boolean,
+  .alt .token.number,
+  .alt .token.constant,
+  .alt .token.symbol,
+  .alt .token.attr-name,
+  .alt .token.deleted {
+    color: #87bbfd;
+    /* blue */ }
+  .alt .token.selector,
+  .alt .token.char,
+  .alt .token.builtin,
+  .alt .token.url,
+  .alt .token.string,
+  .alt .token.inserted {
+    color: #73d4b7;
+    /* cyan */ }
+  .alt .token.entity {
+    color: #c1c6f0;
+    /* base00 */
+    background: #f6f9fc;
+    /* base2 */ }
+  .alt .token.atrule,
+  .alt .token.attr-value,
+  .alt .token.keyword {
+    /* color: #859900; green */
+    color: #f8adff;
+    background-color: rgba(247, 173, 255, 0.1);
+    border-radius: 11px;
+    padding: 0 5px; }
+  .alt .token.function {
+    color: #fff56c;
+    /* yellow */ }
+  .alt .token.regex,
+  .alt .token.important,
+  .alt .token.variable {
+    color: #ff917b;
+    /* orange */
+    background-color: rgba(255, 156, 136, 0.1);
+    border-radius: 11px;
+    padding: 0 5px; }
+  .alt .token.important,
+  .alt .token.bold {
+    font-weight: bold; }
+  .alt .token.italic {
+    font-style: italic; }
+  .alt .token.entity {
+    cursor: help; }
+  .alt pre[data-line] {
+    position: relative;
+    padding: 1em 0 1em 3em; }
+  .alt .line-highlight {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: inherit 0;
+    margin-top: 1em;
+    /* Same as .prismΓÇÖs padding-top */
+    background: rgba(153, 122, 102, 0.08);
+    background: linear-gradient(to right, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
+    pointer-events: none;
+    line-height: inherit;
+    white-space: pre; }
+  .alt .line-highlight:before,
+  .alt .line-highlight[data-end]:after {
+    content: attr(data-start);
+    position: absolute;
+    top: 0.4em;
+    left: 0.6em;
+    min-width: 1em;
+    padding: 0 0.5em;
+    background-color: rgba(153, 122, 102, 0.4);
+    color: #f5f2f0;
+    font: bold 65%/1.5 sans-serif;
+    text-align: center;
+    vertical-align: 0.3em;
+    border-radius: 999px;
+    text-shadow: none;
+    box-shadow: 0 1px white; }
+  .alt .line-highlight[data-end]:after {
+    content: attr(data-end);
+    top: auto;
+    bottom: 0.4em; }
+  .alt pre.line-numbers {
+    position: relative;
+    padding-left: 3.8em;
+    counter-reset: linenumber; }
+  .alt pre.line-numbers > code {
+    position: relative;
+    white-space: inherit; }
+  .alt .line-numbers .line-numbers-rows {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    font-size: 100%;
+    left: -3.8em;
+    width: 3em;
+    /* works for line-numbers below 1000 lines */
+    letter-spacing: -1px;
+    border-right: 1px solid #999;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .alt .line-numbers-rows > span {
+    pointer-events: none;
+    display: block;
+    counter-increment: linenumber; }
+  .alt .line-numbers-rows > span:before {
+    content: counter(linenumber);
+    color: #999;
+    display: block;
+    padding-right: 0.8em;
+    text-align: right; }
