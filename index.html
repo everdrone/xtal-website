@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="bodymovin/bodymovin.min.js"></script>
+  <script src="data.js"></script>
+  <script src="prism/prism.js"></script>
+  <link rel="stylesheet" href="prism/prism.css">
+</head>
+
+<body>
+  <section class="hero-section">
+    <!-- <div id="hero_bg" class="hero-bg unskew">
+      <svg id="hero_bg_in" preserveAspectRatio="xMidYMid slice" style="width: 100%; height: 120%" viewBox="0 0 1280 720" width="1280"
+        height="720">
+      </svg>
+      <script>
+        bodymovin.loadAnimation({
+          container: document.getElementById('hero_bg_in'),
+          renderer: 'svg',
+          loop: true,
+          autoplay: true,
+          animationData: bg_data,
+        });
+        document.getElementById('hero_bg').setAttribute('preserveAspectRatio', 'xMidYMid slice')
+      </script>
+    </div> -->
+    <div class="gradient-background c-bg-gradient-dark">
+    </div>
+    <div class="container">
+      <div class="hero text-center">
+        <h1 class="c-text-white">Backend, as you type</h1>
+        <p class="c-text-dark">Create a powerful database and server in minutes.</p>
+        <!-- <img class="hero-image" src="./assets/xtal_2.png" alt=""> -->
+        <div id="hero_animation">
+        </div>
+        <script>
+          bodymovin.loadAnimation({
+            container: document.getElementById('hero_animation'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            animationData: hero_data,
+          });
+        </script>
+        <div class="button-row">
+          <button class="button-dark">get started</button>
+          <button class="button-default">documentation</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="big-section c-bg-white">
+    <div class="container">
+      <ul class="list-features">
+        <li class="feature-block">
+          <figure>
+            <img src="./assets/icons/generative.svg" alt="">
+          </figure>
+          <h3>Generative Code</h3>
+          <p>
+            Mollit do ex laborum voluptate. Non laborum consectetur ullamco laborum nisi laborum ad occaecat dolor reprehenderit in officia
+            sit. Laborum sint duis
+            <a href="">labore</a> cillum commodo sunt ut. Magna dolore
+            <a href="">proident</a> irure eiusmod nostrud do. Ad eiusmod fugiat cillum laboris officia ex ut esse incididunt sunt nostrud.
+          </p>
+        </li>
+        <li class="feature-block">
+          <figure>
+            <img src="./assets/icons/network.svg" alt="">
+          </figure>
+          <h3>Scalable and Extensible</h3>
+          <p>
+            Culpa magna dolor pariatur qui reprehenderit elit cillum enim consequat sint do dolor ut adipisicing. Aliqua amet nulla nostrud
+            do incididunt
+            <a href="">incididunt culpa</a> officia Lorem reprehenderit Lorem. Nulla et irure sunt culpa tempor elit deserunt sunt magna
+            nulla.
+          </p>
+        </li>
+        <li class="feature-block">
+          <figure>
+            <img src="./assets/icons/abstraction.svg" alt="">
+          </figure>
+          <h3>Higher Abstraction Level</h3>
+          <p>
+            Sunt non deserunt in enim. Id ea nisi veniam laborum aliquip culpa aliquip aliquip exercitation in laboris cillum. Lorem
+            elit
+            <a href="">laboris enim</a> consequat enim aliqua qui velit ad pariatur consequat est ea ad. Qui duis est do culpa cillum
+            in minim esse labore ipsum ex.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="big-section c-bg-dim">
+    <div class="container">
+      <div class="split-feature">
+        <div class="feature-content">
+          <figure>
+            <img src="./assets/icons/nested.svg" alt="">
+          </figure>
+          <h1>Permission Queries.</h1>
+          <p>Non amet qui officia eiusmod proident est cupidatat Lorem elit nostrud non officia ullamco sit. Mollit quis Lorem
+            occaecat proident ea exercitation. Cillum commodo laboris ad pariatur velit amet in do adipisicing esse.</p>
+        </div>
+        <div class="feature-figure">
+          <pre><code class="language-graphql">query Hero(
+  $episode: Episode
+  $withFriends: Boolean!
+) {
+  hero(episode: $episode) {
+    name
+    friends @include(if: $withFriends) {
+      name
+    }
+  }
+}</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="footer">
+
+  </section>
+</body>
+
+</html>
