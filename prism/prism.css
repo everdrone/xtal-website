@@ -114,6 +114,9 @@ pre[class*='language-'] {
 .token.deleted {
 	color: #268bd2; /* blue */
 }
+.token.operator {
+	color: #9671f1;
+}
 
 .token.selector,
 .token.char,
@@ -131,7 +134,7 @@ pre[class*='language-'] {
 
 .token.atrule,
 .token.attr-value,
-.token.keyword {
+/* .token.operator, */ .token.keyword {
 	/* color: #859900; green */
 	color: #9671f1;
 	background-color: rgba(150, 113, 241, 0.1);
