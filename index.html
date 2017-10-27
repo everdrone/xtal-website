@@ -131,10 +131,29 @@
         <div class="feature-figure">
           <div class="ql-req-res horiz">
             <div class="req">
-              <pre data-src="./code/permission.gql"><code class="language-graphql"></code></pre>
+              <pre><code class="language-graphql">query HeroForEpisode($ep: Episode!) {
+	hero(episode: $ep) {
+		name
+		... on Droid {
+			primaryFunction
+		}
+		... on Human {
+			height
+		}
+	}
+}
+</code></pre>
             </div>
             <div class="res">
-              <pre data-src="./code/permission.json"><code class="language-json"></code></pre>
+              <pre data-src="./code/permission.json"><code class="language-json">{
+	"data": {
+		"hero": {
+			"name": "R2-D2",
+			"primaryFunction": "Astromech"
+		}
+	}
+}
+</code></pre>
             </div>
           </div>
         </div>
