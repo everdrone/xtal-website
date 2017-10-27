@@ -171,9 +171,8 @@ section {
 
 .card {
   display: block;
-  border-radius: 6px;
-  border: none;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 15px 35px rgba(0, 0, 0, 0.1), 0 50px 100px rgba(50, 50, 93, 0.1); }
+  border-radius: 8px;
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07); }
 
 .list-features {
   display: flex;
@@ -430,3 +429,24 @@ hr {
   padding: 65px 0 55px;
   line-height: 30px;
   white-space: nowrap; }
+
+.horiz {
+  display: flex;
+  flex-direction: column; }
+  .horiz .req {
+    border-right: none;
+    border-bottom: 1px solid rgba(207, 215, 223, 0.25); }
+  @media (min-width: 767px) {
+    .horiz {
+      display: flex;
+      flex-direction: row; }
+      .horiz .req {
+        border-bottom: none;
+        border-right: 1px solid rgba(207, 215, 223, 0.25); }
+      .horiz *[class*='language-'] {
+        height: 100%; } }
+
+.ql-req-res {
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+  overflow: hidden; }

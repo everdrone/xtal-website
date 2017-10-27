@@ -1,4 +1,5 @@
 /* http://prismjs.com/download.html?themes=prism-solarizedlight&languages=markup+css+clike+javascript+css-extras+diff+git+graphql+json+markdown+jsx+sass+scss+typescript&plugins=line-highlight+line-numbers */
+
 /*
  Solarized Color Schemes originally by Ethan Schoonover
  http://ethanschoonover.com/solarized
@@ -31,21 +32,18 @@ green     #859900
 
 code[class*='language-'],
 pre[class*='language-'] {
-	color: #414770; /* base00 */
-
+	color: #414770;
+	/* base00 */
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;
 	word-break: normal;
 	word-wrap: normal;
-
 	line-height: 1.5;
-
 	-moz-tab-size: 4;
 	-o-tab-size: 4;
 	tab-size: 4;
-
 	-webkit-hyphens: none;
 	-moz-hyphens: none;
 	-ms-hyphens: none;
@@ -56,48 +54,55 @@ pre[class*='language-']::-moz-selection,
 pre[class*='language-'] ::-moz-selection,
 code[class*='language-']::-moz-selection,
 code[class*='language-'] ::-moz-selection {
-	background: #dbe5ff; /* base02 */
+	background: #dbe5ff;
+	/* base02 */
 }
 
 pre[class*='language-']::selection,
 pre[class*='language-'] ::selection,
 code[class*='language-']::selection,
 code[class*='language-'] ::selection {
-	background: #dbe5ff; /* base02 */
+	background: #dbe5ff;
+	/* base02 */
 }
 
 /* Code blocks */
+
 pre[class*='language-'] {
 	padding: 16px;
 	margin: 0;
 	overflow: auto;
-	border-radius: 0.3em;
+	/* border-radius: 0.3em; */
 }
 
 :not(pre) > code[class*='language-'],
 pre[class*='language-'] {
 	/* background-color: #f6f9fc; base3 */
 	background-color: #fff;
-	border-radius: 8px;
 	border: none;
-	box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+
+	/* border-radius: 8px;
+	box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07); */
 }
 
 /* Inline code */
+
 :not(pre) > code[class*='language-'] {
 	padding: 0.1em;
-	border-radius: 0.3em;
+	/* border-radius: 0.3em; */
 }
 
 .token.comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-	color: #91a2b0; /* base1 */
+	color: #91a2b0;
+	/* base1 */
 }
 
 .token.punctuation {
-	color: #6b7c93; /* base01 */
+	color: #6b7c93;
+	/* base01 */
 }
 
 .namespace {
@@ -112,8 +117,10 @@ pre[class*='language-'] {
 .token.symbol,
 .token.attr-name,
 .token.deleted {
-	color: #268bd2; /* blue */
+	color: #268bd2;
+	/* blue */
 }
+
 .token.operator {
 	color: #9671f1;
 }
@@ -124,12 +131,15 @@ pre[class*='language-'] {
 .token.url,
 .token.string,
 .token.inserted {
-	color: #149570; /* cyan */
+	color: #149570;
+	/* cyan */
 }
 
 .token.entity {
-	color: #414770; /* base00 */
-	background: #f6f9fc; /* base2 */
+	color: #414770;
+	/* base00 */
+	background: #f6f9fc;
+	/* base2 */
 }
 
 .token.atrule,
@@ -143,13 +153,15 @@ pre[class*='language-'] {
 }
 
 .token.function {
-	color: #3196d3; /* yellow */
+	color: #3196d3;
+	/* yellow */
 }
 
 .token.regex,
 .token.important,
 .token.variable {
-	color: #fa7459; /* orange */
+	color: #fa7459;
+	/* orange */
 	background-color: rgba(250, 116, 89, 0.1);
 	border-radius: 11px;
 	padding: 0 5px;
@@ -159,6 +171,7 @@ pre[class*='language-'] {
 .token.bold {
 	font-weight: bold;
 }
+
 .token.italic {
 	font-style: italic;
 }
@@ -166,6 +179,7 @@ pre[class*='language-'] {
 .token.entity {
 	cursor: help;
 }
+
 pre[data-line] {
 	position: relative;
 	padding: 1em 0 1em 3em;
@@ -176,13 +190,11 @@ pre[data-line] {
 	left: 0;
 	right: 0;
 	padding: inherit 0;
-	margin-top: 1em; /* Same as .prism’s padding-top */
-
+	margin-top: 1em;
+	/* Same as .prism’s padding-top */
 	background: hsla(24, 20%, 50%, 0.08);
 	background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));
-
 	pointer-events: none;
-
 	line-height: inherit;
 	white-space: pre;
 }
@@ -228,10 +240,10 @@ pre.line-numbers > code {
 	top: 0;
 	font-size: 100%;
 	left: -3.8em;
-	width: 3em; /* works for line-numbers below 1000 lines */
+	width: 3em;
+	/* works for line-numbers below 1000 lines */
 	letter-spacing: -1px;
 	border-right: 1px solid #999;
-
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;

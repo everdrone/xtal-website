@@ -28,11 +28,11 @@ blue      #87bbfd
 cyan      #73d4b7
 green     #859900
 */
-.alt {
+.res {
   /* Code blocks */
   /* Inline code */ }
-  .alt code[class*='language-'],
-  .alt pre[class*='language-'] {
+  .res code[class*='language-'],
+  .res pre[class*='language-'] {
     color: #c1c6f0;
     /* base00 */
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
@@ -49,97 +49,94 @@ green     #859900
     -moz-hyphens: none;
     -ms-hyphens: none;
     hyphens: none; }
-  .alt pre[class*='language-']::-moz-selection,
-  .alt pre[class*='language-'] ::-moz-selection,
-  .alt code[class*='language-']::-moz-selection,
-  .alt code[class*='language-'] ::-moz-selection {
+  .res pre[class*='language-']::-moz-selection,
+  .res pre[class*='language-'] ::-moz-selection,
+  .res code[class*='language-']::-moz-selection,
+  .res code[class*='language-'] ::-moz-selection {
     background: rgba(255, 255, 255, 0.1);
     /* base02 */ }
-  .alt pre[class*='language-']::selection,
-  .alt pre[class*='language-'] ::selection,
-  .alt code[class*='language-']::selection,
-  .alt code[class*='language-'] ::selection {
+  .res pre[class*='language-']::selection,
+  .res pre[class*='language-'] ::selection,
+  .res code[class*='language-']::selection,
+  .res code[class*='language-'] ::selection {
     background: rgba(255, 255, 255, 0.1);
     /* base02 */ }
-  .alt pre[class*='language-'] {
+  .res pre[class*='language-'] {
     padding: 16px;
     margin: 0;
-    overflow: auto;
-    border-radius: 0.3em; }
-  .alt :not(pre) > code[class*='language-'],
-  .alt pre[class*='language-'] {
+    overflow: auto; }
+  .res :not(pre) > code[class*='language-'],
+  .res pre[class*='language-'] {
     /* background-color: #f6f9fc; base3 */
     background-color: #32325d;
-    border-radius: 8px;
-    border: none;
-    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07); }
-  .alt :not(pre) > code[class*='language-'] {
-    padding: 0.1em;
-    border-radius: 0.3em; }
-  .alt .token.comment,
-  .alt .token.prolog,
-  .alt .token.doctype,
-  .alt .token.cdata {
+    border: none; }
+  .res :not(pre) > code[class*='language-'] {
+    padding: 0.1em; }
+  .res .token.comment,
+  .res .token.prolog,
+  .res .token.doctype,
+  .res .token.cdata {
     color: #3b3c74;
     /* base1 */ }
-  .alt .token.punctuation {
+  .res .token.operator,
+  .res .token.punctuation {
     color: #8898ad;
     /* base01 */ }
-  .alt .namespace {
+  .res .namespace {
     opacity: 0.7; }
-  .alt .token.property,
-  .alt .token.tag,
-  .alt .token.boolean,
-  .alt .token.number,
-  .alt .token.constant,
-  .alt .token.symbol,
-  .alt .token.attr-name,
-  .alt .token.deleted {
+  .res .token.property,
+  .res .token.tag,
+  .res .token.boolean,
+  .res .token.number,
+  .res .token.constant,
+  .res .token.symbol,
+  .res .token.attr-name,
+  .res .token.deleted {
     color: #87bbfd;
     /* blue */ }
-  .alt .token.selector,
-  .alt .token.char,
-  .alt .token.builtin,
-  .alt .token.url,
-  .alt .token.string,
-  .alt .token.inserted {
+  .res .token.selector,
+  .res .token.char,
+  .res .token.builtin,
+  .res .token.url,
+  .res .token.string,
+  .res .token.inserted {
     color: #73d4b7;
     /* cyan */ }
-  .alt .token.entity {
+  .res .token.entity {
     color: #c1c6f0;
     /* base00 */
     background: #f6f9fc;
     /* base2 */ }
-  .alt .token.atrule,
-  .alt .token.attr-value,
-  .alt .token.keyword {
+  .res .token.atrule,
+  .res .token.attr-value,
+  .res .token.keyword {
     /* color: #859900; green */
     color: #f8adff;
     background-color: rgba(247, 173, 255, 0.1);
     border-radius: 11px;
     padding: 0 5px; }
-  .alt .token.function {
+  .res .token.function {
     color: #fff56c;
     /* yellow */ }
-  .alt .token.regex,
-  .alt .token.important,
-  .alt .token.variable {
+  .res .token.regex,
+  .res .token.important,
+  .res .token.variable {
     color: #ff917b;
     /* orange */
     background-color: rgba(255, 156, 136, 0.1);
     border-radius: 11px;
     padding: 0 5px; }
-  .alt .token.important,
-  .alt .token.bold {
+  .res .token.important,
+  .res .token.bold {
     font-weight: bold; }
-  .alt .token.italic {
+  .res .token.italic {
     font-style: italic; }
-  .alt .token.entity {
+  .res .token.entity {
     cursor: help; }
-  .alt pre[data-line] {
+  .res pre[data-line] {
     position: relative;
     padding: 1em 0 1em 3em; }
-  .alt .line-highlight {
+  .res .line-highlight {
     position: absolute;
     left: 0;
     right: 0;
@@ -151,8 +148,8 @@ green     #859900
     pointer-events: none;
     line-height: inherit;
     white-space: pre; }
-  .alt .line-highlight:before,
-  .alt .line-highlight[data-end]:after {
+  .res .line-highlight:before,
+  .res .line-highlight[data-end]:after {
     content: attr(data-start);
     position: absolute;
     top: 0.4em;
@@ -167,18 +164,18 @@ green     #859900
     border-radius: 999px;
     text-shadow: none;
     box-shadow: 0 1px white; }
-  .alt .line-highlight[data-end]:after {
+  .res .line-highlight[data-end]:after {
     content: attr(data-end);
     top: auto;
     bottom: 0.4em; }
-  .alt pre.line-numbers {
+  .res pre.line-numbers {
     position: relative;
     padding-left: 3.8em;
     counter-reset: linenumber; }
-  .alt pre.line-numbers > code {
+  .res pre.line-numbers > code {
     position: relative;
     white-space: inherit; }
-  .alt .line-numbers .line-numbers-rows {
+  .res .line-numbers .line-numbers-rows {
     position: absolute;
     pointer-events: none;
     top: 0;
@@ -192,11 +189,11 @@ green     #859900
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none; }
-  .alt .line-numbers-rows > span {
+  .res .line-numbers-rows > span {
     pointer-events: none;
     display: block;
     counter-increment: linenumber; }
-  .alt .line-numbers-rows > span:before {
+  .res .line-numbers-rows > span:before {
     content: counter(linenumber);
     color: #999;
     display: block;

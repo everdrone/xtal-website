@@ -129,30 +129,13 @@
             occaecat proident ea exercitation. Cillum commodo laboris ad pariatur velit amet in do adipisicing esse.</p>
         </div>
         <div class="feature-figure">
-          <!-- <div class="alt"> -->
-          <pre><code class="language-graphql">query HeroForEpisode(
-  $ep: Episode!
-) {
-  hero(episode: $ep) {
-    name
-    ... on Droid {
-      primaryFunction
-    }
-    ... on Human {
-      height
-    }
-  }
-}</code></pre>
-          <!-- </div> -->
-          <div class="alt">
-            <pre><code class="language-json">{
-  "data": {
-    "hero": {
-      "name": "R2-D2",
-      "primaryFunction": "Astromech"
-    }
-  }
-}</code></pre>
+          <div class="ql-req-res horiz">
+            <div class="req">
+              <pre data-src="./code/permission.gql"><code class="language-graphql"></code></pre>
+            </div>
+            <div class="res">
+              <pre data-src="./code/permission.json"><code class="language-json"></code></pre>
+            </div>
           </div>
         </div>
       </div>
